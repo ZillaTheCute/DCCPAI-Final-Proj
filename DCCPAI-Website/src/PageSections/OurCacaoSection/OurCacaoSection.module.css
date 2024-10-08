@@ -1,0 +1,62 @@
+/* beginning of ourCacaoSection section */
+.ourCacaoSection {
+    padding: 5rem var(--leftrightpadding) 5rem var(--leftrightpadding);
+    background-color: var(--lighter-yellow-color);
+}
+
+.ourCacaoSectionTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0;
+}
+
+.ourCacaoMainText {
+    font-family: var(--LilitaOne);
+    font-size: 8rem;
+}
+
+.ourCacaoSubText {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--dark-green-color);
+}
+
+.ourCacaoProducts {
+    margin-top: 5rem;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Prevents cards from stretching */
+    height: 34rem;
+    width: 42rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: solid 2px;
+    
+}
+
+/* Carousel container styling */
+.swiperContainer {
+  overflow: hidden;
+  margin-top: 5rem;
+  width: 100%;
+  position: relative;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 1.6s ease-in-out;  /* Smooth sliding transition */
+}
+
+.swiperSlide {
+  min-width: 33.33%; /* Each slide takes up one-third of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Ensure slides don't shrink when fewer than 3 products */
+  padding-bottom: 2rem;
+
+}

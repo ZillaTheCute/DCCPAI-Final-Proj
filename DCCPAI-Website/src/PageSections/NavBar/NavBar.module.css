@@ -1,0 +1,101 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsla(34, 78%, 91%, 0);
+    /* background-color: var(--lighter-yellow-color); */
+    font-weight: bold;
+    z-index: 1000; /* Add this */
+
+}
+
+.logoImage {
+    padding: 3rem 0;
+    height: 8vh; 
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--leftrightpadding);
+    
+}
+
+.navBarLogoText {
+    margin-right: auto; 
+    font-size: 5rem;
+}
+
+.navBarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarContentElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: clamp(2rem, 1.3vw ,3rem); */
+    font-size: 3rem;
+    /* width: clamp(6rem, 20vw, 8rem);
+    height: clamp(6rem, 20vw, 8rem);  */
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+    
+} 
+
+.navBarShop, .navBarFind, .navBarAbout {
+    width: auto;
+    border-radius: 4rem;
+    padding: 2.1875rem 4rem; /*2.1875rem leads to height being 64px like the icon circles */
+}
+
+.navBar .navBarIcon {
+    width: clamp(6rem, 3.5vw, 8rem);
+    height: clamp(6rem, 3.5vw, 8rem);
+    border-radius: 100%;
+}
+
+.svgContainer {
+    height: 50%;
+    width: 50%;
+}
+
+.navBarContentElement p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover States */
+
+.navBarContentElement, .navBarContentElement p, .navBarContentElement .navBarSVG {
+    transition: background-color 0.3s ease-in-out, 
+                color            0.3s ease-in-out,
+                fill             0.3s ease-in-out;
+}
+
+.navBarContentElement:hover {
+    background-color: black;
+}
+
+.navBarContentElement:hover p {
+    color: white;
+}
+
+.navBarContentElement:hover .navBarSVG {
+    fill: white;
+}
+
+
+.whatsAppLogoImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales properly inside its container */
+}

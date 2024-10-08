@@ -1,0 +1,17 @@
+.whoWeAreTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 1rem;
+    /* width: 30vw; */
+}
+
+.whoWeAreMainText {
+    font-family: var(--LilitaOne);
+    font-size: 8rem;
+}
+
+.whoWeAreSubText {
+    font-size: 2rem;
+    line-height: 1.5;
+}

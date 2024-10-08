@@ -1,0 +1,42 @@
+.heroImageSection {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../../Assets/Pictures/background1.png');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.heroTitleSectionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+    width: 20vw;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    margin: auto var(--leftrightpadding) 5rem var(--leftrightpadding);
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.heroText {
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.subText {
+    font-size: 2rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+}

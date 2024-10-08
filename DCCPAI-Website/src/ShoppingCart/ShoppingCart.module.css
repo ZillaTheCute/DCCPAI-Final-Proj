@@ -1,0 +1,159 @@
+.cartContainer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.cartContainer.open {
+    right: 0;
+}
+
+.cartToggle {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #93ce91;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+    border-radius: 4px 0 0 4px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cartContainer.open .cartToggle {
+    right: 300px;
+}
+
+.cartContent {
+    padding: 20px;
+}
+
+.cartContent h2 {
+    margin-top: 0;
+    font-size: 22px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.itemDetails {
+    display: flex;
+}
+
+.imageAndButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.textDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Space between image and remove button */
+}
+
+.removeButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+    background-color: darkred;
+}
+
+.itemName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.itemPrice {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+.removeButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+    background-color: darkred;
+}
+
+.cartLogo {
+    width: 8.5rem; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.productImage {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    margin-right: 10px; /* Add some margin to the right of the image */
+}
+
+/* Button Styles */
+.filterButton, .clearButton {
+    background-color: var(--dark-green-color); /* Adjust the color to match your theme */
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.clearButton {
+    background-color: var(--light-red-color); /* Different color for clear filter button */
+}
+
+/* Hover effect for buttons */
+.filterButton:hover, .clearButton:hover {
+    background-color: var(--light-green-color); /* Lighter green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    
+}

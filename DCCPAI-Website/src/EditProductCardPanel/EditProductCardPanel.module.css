@@ -1,0 +1,203 @@
+.panelContainer {
+    border-radius: 2rem;
+    height: auto;
+    width: auto;
+    padding: 5rem ;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--dark-green-color); /* placeholder */
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topRow .editText {
+    font-size: var(--sub-hero-text-size);
+    font-family: var(--LilitaOne);
+    color: var(--dark-green-color);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.xButton {
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+}
+
+.leftArrow, .rightArrow {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 2px 2px 0 0 var(--dark-green-color); 
+    background-color: var(--lighter-yellow-color);
+    color: var(--dark-green-color); /* placeholder */
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: var(--button-text-size);
+    text-decoration: none;
+}
+
+.leftArrow h1, .rightArrow h1 {
+    font-size: 3rem;
+}
+
+.imagePreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    background-color: white;
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+    position: relative; /* To ensure the overlay stays on top of the image */
+    overflow: hidden;
+}
+
+.panelInputDiv {
+    text-align: center;
+}
+
+.panelInputDiv h1{
+    font-size: 8rem;
+}
+
+.panelInput {
+    width: 40vw;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); /* placeholder */
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.panelInputDiv select {
+    display: flex;
+    width: 100%;
+}
+
+.productCardPanelGrid {
+    margin-top: 4rem;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.leftAndRightButtonAndCounter {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    column-gap: 2rem;
+}
+
+.imageCounter {
+    color: var(--dark-green-color);
+    font-size: var(--button-text-size);
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.bottomInputsDiv {
+    margin: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.bottomInputs, .imageSubmission {
+    width: fit-content;
+    display: flex;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.submitButton {
+    font-weight: bold;
+    font-family: var(--Roboto);
+    padding: 0;
+    margin: 0;
+    width: 100rem;
+}
+
+.imageSubmission input {
+    align-self: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftSideBottom h1 {
+    font-size: var(--button-text-size);
+}
+
+.bottomButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    column-gap: 10rem;
+}
+
+/* Hover States: */
+
+.xButton, .xButton button, .bottomInputButtons, .bottomInputButtonsDelete.leftArrow, .rightArrow {
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.2s ease-in-out,  
+                border 0.2s ease-in-out,  
+                color            0.3s ease-in-out;
+  }
+  
+.xButton:hover {
+      cursor: pointer;
+      color: white; /* placeholder */
+      background-color: red;
+}
+
+.bottomInputButtons:hover {
+    cursor: pointer;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 4px 4px 0 0 var(--dark-green-color);
+    color: var(--dark-green-color);
+}
+
+.bottomInputButtonsDelete:hover {
+    cursor: pointer;
+    border: 1px solid red; /* placeholder */
+    box-shadow: 4px 4px 0 0 red;
+    color: red;
+}
+
+.panelInput:focus {
+    outline: none;
+}
+
+.leftArrow:hover, .rightArrow:hover {
+    cursor: pointer;
+    color: white; /* placeholder */
+    background-color: var(--dark-green-color);
+  }

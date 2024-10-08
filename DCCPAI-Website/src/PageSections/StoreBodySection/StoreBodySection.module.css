@@ -1,0 +1,240 @@
+.storeBodyContainer {
+    padding: 0 var(--leftrightpadding);
+    display: flex;
+    justify-content: space-between;
+    /* min-height: 100vh; */
+    /* background-color: var(--light-green-color); */
+}
+
+.storeBodyLeft h1, .storeBodyLeft h2 {
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+}
+
+.storeBodyLeft h1 {
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.storeBodyLeft h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.storeBodyLeft ul {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+}
+
+.storeBodyLeft li {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+.storeBodyRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    padding-top: 5rem; /* Keeps padding */
+    width: 100%;}
+
+.storeBodyGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    gap: 6rem;    
+}
+
+.pageList {
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+}
+
+.pageList div {  /*find a way to make it show the highlighted page */
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0 1rem;
+    border: solid 2px black;
+    border-radius: 50%;
+}
+
+/* Hover States */
+
+.storeBodyLeft li, 
+.storeBodyLeft h2  {
+    transition: color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+}
+
+li:hover, .storeBodyLeft h2:hover {
+    cursor: pointer;
+    color: var(--dark-green-color); /* placeholder */
+}
+
+.pageList div:hover {
+    cursor: pointer;
+}
+
+
+
+.activePage {
+    background-color: var(--dark-green-color); /* Highlight the current page */
+    color: white;
+}
+
+
+.transitioning {
+    opacity: 0;
+    transform: translateX(20px);  /* Slide the grid slightly on page change */
+}
+
+.storeBodyLeft li, 
+.storeBodyLeft h2  {
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+}
+
+li:hover, .storeBodyLeft h2:hover {
+    cursor: pointer;
+    color: var(--dark-green-color); /* placeholder */
+}
+
+.pageList div:hover {
+    cursor: pointer;
+}
+
+.storeBodyGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    gap: 6rem;    
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  /* Add transition effects */
+}
+
+.transitioning {
+    opacity: 0;
+    transform: translateX(20px);  /* Slide the grid slightly on page change */
+}
+
+.activePage {
+    background-color: var(--dark-green-color); /* Highlight the current page */
+    color: white;
+}
+
+.option {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+
+
+/* Button Styles */
+.filterButton, .clearButton {
+    background-color: var(--dark-green-color); /* Adjust the color to match your theme */
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+
+}
+
+.clearButton {
+    background-color: var(--light-red-color); /* Different color for clear filter button */
+}
+
+/* Hover effect for buttons */
+.filterButton:hover, .clearButton:hover {
+    background-color: var(--light-green-color); /* Lighter green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    
+}
+
+/* Price Range Select Box */
+.priceRange {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border: 2px solid var(--dark-green-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--dark-green-color);
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    width: 75%;
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+}
+
+.priceRange:hover {
+    border-color: var(--light-green-color);
+    background-color: var(--light-green-color);
+    color: white;
+}
+
+.activeCategory li {
+    background-color: var(--highlight-color); /* Set a highlight color for the selected category */
+    color: var(--dark-green-color); /* placeholder */
+    border-radius: 5px; /* Optional: make it rounded */
+    padding: 0.5rem 1rem;
+}
+
+.activeBrand li {
+    background-color: var(--highlight-color); /* Set a highlight color for the selected brand */
+    color: var(--dark-green-color); /* placeholder */
+    border-radius: 5px; /* Optional: make it rounded */
+    padding: 0.5rem 1rem;
+}
+
+.noProductsFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--LilitaOne); /* Match the font */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--dark-green-color); /* Use a primary color from your theme */
+    padding: 2rem;
+    border: 2px dashed var(--light-green-color); /* Dashed border for a subtle visual */
+    border-radius: 10px;
+    background-color: var(--light-background-color); /* Optional: light background */
+    width: 100%; /* Full width of the container */
+    text-align: center;
+    margin-top: 5rem; /* Space from other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+    max-width: 80%; /* Limits width within the center */
+    margin: 0 auto; /* Center horizontally */
+
+
+}
+
+.noProductsFound::before {
+    content: '🔍'; /* Optional icon */
+    margin-right: 0.5rem;
+    font-size: 2.5rem; /* Size of icon */
+}

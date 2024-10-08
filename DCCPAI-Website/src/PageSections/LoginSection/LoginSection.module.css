@@ -1,0 +1,36 @@
+.loginSectionDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer {
+    background-color: #fff;
+    padding: 5rem;
+    border: solid black 2px;
+    border-radius: 8px;
+    width: 300px;
+}
+.loginContainer h1 {
+    text-align: center;
+    font-size: var(--main-hero-text-size);
+}
+.loginContainer label {
+    display: block;
+    font-size: var(--button-text-size);
+}
+.loginContainer input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.TextButtonPlacement {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}

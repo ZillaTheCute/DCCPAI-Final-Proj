@@ -1,0 +1,33 @@
+.circleAddButton {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: fixed; 
+    bottom: 1rem; 
+    right: 1rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--dark-green-color);
+    color: white;
+}
+
+.circleAddButton h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/* Hover States: */
+
+.circleAddButton, .circleAddButton button {
+    transition: background-color 0.3s ease-in-out, 
+                color            0.3s ease-in-out;
+  }
+  
+.circleAddButton:hover {
+      cursor: pointer;
+      color: white; /* placeholder */
+      background-color: var(--dark-green-color);
+}

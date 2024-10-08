@@ -1,0 +1,175 @@
+.panelContainer {
+    border-radius: 2rem;
+    height: auto;
+    width: auto;
+    padding: 5rem ;
+    margin: auto;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--dark-green-color); /* placeholder */
+}
+
+.topRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topRow .addText {
+    font-size: var(--sub-hero-text-size);
+    font-family: var(--LilitaOne);
+    color: var(--dark-green-color);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.xButton {
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+}
+
+.imagePreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    background-color: white;
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+    position: relative; /* To ensure the overlay stays on top of the image */
+    margin: 2rem;
+}
+
+.imagePreview img {
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.panelInputDiv {
+    text-align: center;
+}
+
+.panelInputDiv h1{
+    font-size: 8rem;
+}
+
+.panelInput {
+    width: 40vw;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); /* placeholder */
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem
+}
+
+.panelInputDiv select {
+    display: flex;
+    width: 100%;
+}
+
+.productCardPanelGrid {
+    margin-top: 4rem;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.bottomInputsDiv {
+    margin: 4rem 0 4rem 11rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.bottomInputs, .imageSubmission {
+    width: fit-content;
+    display: flex;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.imageSubmission {
+    column-gap: 1rem;
+}
+
+.imageSubmission input {
+    align-self: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.leftSideBottom h1 {
+    font-size: var(--button-text-size);
+}
+
+.bottomButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    column-gap: 10rem;
+}
+
+/* Hover States: */
+
+.xButton, .xButton button {
+    transition: background-color 0.3s ease-in-out, 
+                color            0.3s ease-in-out;
+  }
+  
+.xButton:hover {
+      cursor: pointer;
+      color: white; /* placeholder */
+      background-color: var(--dark-green-color);
+}
+
+.panelInput:focus {
+    outline: none;
+}
+
+.grayedOutImage {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+/* Overlay for number of images being added */
+.imagePreview {
+    position: relative; /* To ensure the overlay stays on top of the image */
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with some transparency */
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}

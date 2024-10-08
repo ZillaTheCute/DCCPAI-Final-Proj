@@ -1,0 +1,20 @@
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 2rem;
+    height: auto;
+    width: 25vw;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0; /* Prevents the card from shrinking */
+}
+
+.middlePicture {
+    flex-grow: 1; /* Takes up remaining space, pushing topRow and bottomRow */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}

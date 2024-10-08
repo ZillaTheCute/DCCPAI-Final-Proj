@@ -1,0 +1,21 @@
+.shopTitleContainer {
+    padding: 15rem 0 5rem 0;
+}
+
+.shopTitleContainer h1 {
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+    font-size: 15rem;
+    text-align: center;
+    line-height: 0.7;
+}
+
+.shopTitleContainer h2, .shopTitleContainer h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.shopTitleContainer h2 {
+    font-size: 4rem;
+}

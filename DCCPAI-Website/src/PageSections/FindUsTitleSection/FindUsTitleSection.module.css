@@ -1,0 +1,29 @@
+.findUsTitleContainer {
+    background-color: var(--dark-green-color);
+    padding: 15rem 0 5rem 0;
+}
+
+.findUsTitleContainer h1, .findUsTitleContainer h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+} 
+
+.findUsTitleContainer h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.findUsTitleContainer h2 {
+    font-family: var(--LilitaOne);
+    font-weight: normal;
+    font-size: 15rem;
+    text-align: center;
+    line-height: 0.7;
+}
+
+/* .findUsTitleContainer h3 {
+    font-size: 8rem;
+    text-align: center;
+    margin: 0 0 0 0;
+} */

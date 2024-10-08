@@ -1,0 +1,106 @@
+.aboutBodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem var(--leftrightpadding) 10rem var(--leftrightpadding);
+    background-color: var(--lighter-yellow-color);
+    background-image: url('../../Assets/AboutUsPictures/kindy-bubbles.png');
+    background-position:50% 29%; /* Centers the image */
+    background-repeat:repeat-y; /* Prevents the image from repeating */
+}
+
+.missionVisionContainer { 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-rows: auto auto; /* Two rows */
+    margin-bottom: 10rem;
+    row-gap: 4rem;
+    border: 1px solid black; /* placeholder */
+    border-radius: 2rem;
+    box-shadow: 3px 3px 0 0 black;
+    padding: 4rem;
+    background-color: var(--dark-green-color);
+}
+
+.leftTextTop {
+    width: fit-content;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    /* margin: auto var(--leftrightpadding) 5rem var(--leftrightpadding); */
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+    grid-column: 1 / 1; /* Span from the first to the second column line */
+    grid-row: 1 / 1;    /* Span from the first to the second row line */
+}
+
+.flavorPicture {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2 / 2; 
+    grid-row: 1 / 3; 
+    height: 50vh;
+    aspect-ratio: 0.62 / 1;
+    background-image: url('../../Assets/AboutUsPictures/kindy-cup-of-coffee.png');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.leftTextBottom {
+    width: fit-content;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+    grid-column: 1 / 1; 
+    grid-row: 2 / 2; 
+}
+
+.theProcess, .theSource {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+
+.theProcessPicture {
+    height: 45vh;
+    aspect-ratio: 0.95 / 1;
+    background-image: url('../../Assets/AboutUsPictures/kindy-groceries-in-a-paper-bag.png');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.theSourcePicture {
+    height: 45vh;
+    aspect-ratio: 1 / 1;
+    background-image: url('../../Assets/AboutUsPictures/kindy-farmers-market.png');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.theProcess .leftText, .theSource .rightText {
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+}
+
+.bottomText {
+    text-align: center;
+    align-self: center;
+    width: fit-content;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    /* margin: auto var(--leftrightpadding) 5rem var(--leftrightpadding); */
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+}
+

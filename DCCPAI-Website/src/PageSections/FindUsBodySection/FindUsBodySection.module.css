@@ -1,0 +1,13 @@
+.findUsBodyContainer {
+    background-color: var(--dark-green-color);
+    text-align: center;
+    padding: 0 0 5rem 0;
+    height: calc(100vh - 282px);
+    width: 100%;
+}
+
+.googleMap {
+    width: 100%;      /* Set the iframe to full width */
+    height: 600px;   /* Keep your desired height */
+    border: 0;       /* Remove any border (if applicable) */
+}

@@ -1,0 +1,9 @@
+.termsAndConditionsBodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3vw;
+    min-height: 100vh;
+    row-gap: 8rem;
+    margin-bottom: 8rem;
+}
+

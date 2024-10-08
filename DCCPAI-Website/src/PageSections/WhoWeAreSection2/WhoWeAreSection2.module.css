@@ -1,0 +1,36 @@
+.WhoWeAreSection2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--leftrightpadding);
+    background-color: var(--dark-green-color);
+    /* background-color: white; */
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    padding: 4rem;
+    border-radius: 2rem;
+    background-image: url('../../Assets/Pictures/shino-nakamura-QR07wCzQiJQ-unsplash.jpg');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+}
+
+.textDiv {
+    margin-top: auto;
+    margin-left: auto;
+    height: auto;
+    width: auto;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    /* margin: auto var(--leftrightpadding) 5rem var(--leftrightpadding); */
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+}

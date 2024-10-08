@@ -1,0 +1,24 @@
+.TextButton {
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); /* placeholder */
+    background-color: var(--lighter-yellow-color);
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: var(--button-text-size);
+    text-decoration: none;
+  }
+
+/* Hover States: */
+
+.TextButton, .TextButton button {
+  transition: background-color 0.3s ease-in-out, 
+              color            0.3s ease-in-out;
+}
+
+  .TextButton:hover {
+    cursor: pointer;
+    color: white; /* placeholder */
+    background-color: var(--dark-green-color);
+  }

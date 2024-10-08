@@ -1,0 +1,49 @@
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+    border-radius: 2rem;
+    height: 50vh;
+    width: 18vw;
+    flex-shrink: 0; /* Prevents the card from shrinking */
+}
+
+.topRow, .bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topRow {
+    font-size: 2rem;
+}
+
+
+.productPrice {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.middlePicture {
+    flex-grow: 1; /* Takes up remaining space, pushing topRow and bottomRow */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 35rem;
+    width: auto;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: solid 2px;
+}
+
+.topRow .productReview, .bottomRow {
+    font-family: var(--LilitaOne);
+}
+
+.bottomRow {
+    margin-top: auto;
+    font-size: 2rem;
+}

@@ -1,0 +1,50 @@
+.faqBodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3vw;
+    margin-bottom: 5rem;
+}
+
+.searchBarDiv {
+    text-align: center;
+    margin: 0 0 0 8rem 0;
+}
+
+.searchBarDiv h1{
+    font-size: 8rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.searchBar {
+    width: 40vw;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); /* placeholder */
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.commonIssues {
+    margin-top: 8rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    align-self: center;
+    gap: 8rem;
+    margin-top: 6rem;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.FAQCard {
+    padding: 4rem;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color);
+    border-radius: 2rem;
+}

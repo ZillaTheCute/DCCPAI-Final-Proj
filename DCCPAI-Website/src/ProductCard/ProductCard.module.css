@@ -1,0 +1,64 @@
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.productImage {
+    height: 34rem;
+    width: 34rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: solid 2px;
+}
+
+.productTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 2rem;
+}
+
+.productName {
+    font-weight: bold;
+}
+
+/* .leftSideText, .rightSideIcon {
+    width: 50%;
+} */
+
+.leftSideText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 0.8;  /* placeholder */
+}
+
+.productDescription {
+    color: gray;
+}
+
+.rightSideIcon {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.productCardSVGContainer {
+    margin: 0;
+    padding: 0;
+    height: 30%;
+    width: 30%;
+}
+
+.circleRightChevron {
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover States */

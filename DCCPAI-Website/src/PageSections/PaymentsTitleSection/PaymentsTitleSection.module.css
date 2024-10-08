@@ -1,0 +1,16 @@
+.paymentsTitleContainer {
+    margin-top: 10rem;
+    padding: 10rem 0;
+}
+
+.paymentsTitleContainer h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0;
+}
+
+.paymentsTitleContainer h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}

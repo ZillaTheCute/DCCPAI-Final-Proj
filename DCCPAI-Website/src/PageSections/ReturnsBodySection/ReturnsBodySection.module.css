@@ -1,0 +1,8 @@
+.returnsBodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--leftrightpadding);
+    row-gap: 8rem;
+    padding-bottom: 5rem;
+}
+

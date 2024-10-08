@@ -1,0 +1,39 @@
+/* beginning of The Process/Source segment */
+.processSourceSection {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+.processSourceTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theProcess, .theSource {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.theProcess {
+    margin-right:auto;
+}
+
+.theSource {
+    text-align: right;
+    margin-left: auto;
+} 
+
+.theProcessTitleText, .theSourceTitleText {
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+.theProcessSubText, .theSourceSubText {
+    font-size: 3rem;
+    width: 40vw;
+}

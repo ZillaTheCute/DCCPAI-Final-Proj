@@ -1,0 +1,10 @@
+.errorPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--main-hero-text-size);
+    font-weight: bold;
+}

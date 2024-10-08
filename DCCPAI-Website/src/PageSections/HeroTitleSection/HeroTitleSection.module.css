@@ -1,0 +1,50 @@
+.heroImageSection { /*Body*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*130px is the height of the nav bar section*/
+    background-color: var(--lighter-yellow-color);
+    /* background-image: url("D:\School\Information Systems\Final Capstone Project Website\DCCPAI-Website\src\Assets\Pictures\flat-adventure-background\5803426.jpg");
+    background-size: cover; */
+}
+
+.heroImageContainer {
+    display: flex;
+    flex-direction: column; /* This keeps child elements in block layout */
+    justify-content: center;
+    height: calc( calc(100vh - 130px) - 64px );
+    width: 100%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 8rem;
+    /* background-image: url("https://images.unsplash.com/photo-1552404767-1dc7187feef6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+}
+
+.heroText, .heroSubText{
+    margin-left: 16rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.heroText {
+    font-size: var(--main-hero-text-size);
+}
+
+.heroSubText {
+    font-size:  var(--sub-hero-text-size);;
+    margin-top: 2rem;
+    
+}
+
+.heroImageSection .shopButton {
+    margin-top: 3rem;
+    margin-left: 16rem;
+}
+
+.buttonContainer {
+    margin-top: 3rem;
+    margin-left: 16rem;
+}
+
+/* Parallax Effect Testing */

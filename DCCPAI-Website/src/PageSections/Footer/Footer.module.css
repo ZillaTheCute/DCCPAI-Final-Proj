@@ -1,0 +1,58 @@
+/* beginning of footer Section */
+.footerSection {
+    background-color: var(--lighter-yellow-color);
+    /* font-family: var(--LilitaOne); */
+    font-weight: bold;
+    /* border-top-style: solid;
+    border-width: 1px;
+    border-top-color: lightgray; */
+    padding: 5rem var(--leftrightpadding) 8rem var(--leftrightpadding)
+}
+
+.leftMostLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoImage {
+    height: 15vh; 
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList, .footerContactText {
+    padding: 5rem 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footerList li {
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+.footerContactText {
+    width: 13vw;
+}
+
+.footerList li {
+    font-size: 3rem;
+}
+
+.footerContactText {
+    font-size: 2rem;
+}
+
+/* Hover states: */
+
+.footerList li {
+    transition: color 0.2s ease-in-out;
+}
+
+.footerList li:hover {
+    color: var(--dark-green-color);
+}

@@ -1,0 +1,29 @@
+.aboutTitleContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rem var( --leftrightpadding) 0 var( --leftrightpadding);
+    background-color: var(--lighter-yellow-color);
+    background-image: url('../../Assets/AboutUsPictures/kindy-bubbles.png');
+    background-position: top; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.aboutUsTitleText {
+    width: fit-content;
+    border: 1px solid black; /* placeholder */
+    box-shadow: 3px 3px 0 0 black;
+    /* margin: auto var(--leftrightpadding) 5rem var(--leftrightpadding); */
+    border-radius: 2rem;
+    background-color: white;
+    padding: 4rem;
+}
+
+.aboutUsPicture {
+    height: 45vh;
+    aspect-ratio: 1 / 1;
+    background-image: url('../../Assets/AboutUsPictures/kindy-young-woman-watering-a-plant.png');  /*Illustration by Icons 8 from Ouch! */
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}

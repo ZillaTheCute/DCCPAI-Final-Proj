@@ -1,0 +1,18 @@
+.whoWeAreTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 1rem;
+    width: 30vw;
+}
+
+.whoWeAreMainText {
+    /* color: var(--dark-green-color); */
+    font-family: var(--LilitaOne);
+    font-size: 4rem;
+}
+
+.whoWeAreSubText {
+    font-size: 2rem;
+    line-height: 1.5;
+}
